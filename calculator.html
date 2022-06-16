@@ -10,34 +10,36 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/calculator.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="container">
+
             <div id="calculator">
 
                 <div id="display"></div>
 
-                <table id="buttons">
+                <table id="input type="button"s">
 
                     <tr class="btn-row">
 
                         <td class="btn">
-                            <button id="divide">/</button>
+                            <input type="button" id="divide" value="/">
                         </td>
 
                         <td class="btn">
-                            <button id="multiply">*</button>
+                            <input type="button" id="multiply" value="*">
                         </td>
 
                         <td class="btn">
-                            <button id="add">+</button>
+                            <input type="button" id="add" value="+">
                         </td>
 
                         <td class="btn">
-                            <button id="subtract">-</button>
+                            <input type="button" id="subtract" value="-">
                         </td>
 
                     </tr>
@@ -45,39 +47,19 @@
                     <tr class="btn-row">
 
                         <td class="btn">
-                            <button id="seven">7</button>
+                            <input type="button" id="seven" value="7">
                         </td>
 
                         <td class="btn">
-                            <button id="eight">8</button>
+                            <input type="button" id="eight" value="8">
                         </td>
 
                         <td class="btn">
-                            <button id="nine">9</button>
+                            <input type="button" id="nine" value="9">
                         </td>
 
                         <td class="btn">
-                            <button id="back">bksace</button>
-                        </td>
-
-                    </tr>
-
-                    <tr class="btn-row">
-
-                        <td class="btn">
-                            <button id="four">4</button>
-                        </td>
-
-                        <td class="btn">
-                            <button id="five">5</button>
-                        </td>
-
-                        <td class="btn">
-                            <button id="six">6</button>
-                        </td>
-
-                        <td class="btn">
-                            <button id="clear">clear</button>
+                            <input type="button" id="back" value="backspace">
                         </td>
 
                     </tr>
@@ -85,15 +67,19 @@
                     <tr class="btn-row">
 
                         <td class="btn">
-                            <button id="one">1</button>
+                            <input type="button" id="four" value="4">
                         </td>
 
                         <td class="btn">
-                            <button id="two">2</button>
+                            <input type="button" id="five" value="5">
                         </td>
 
                         <td class="btn">
-                            <button id="three">3</button>
+                            <input type="button" id="six" value="6">
+                        </td>
+
+                        <td class="btn">
+                            <input type="button" id="clear" value="clear">
                         </td>
 
                     </tr>
@@ -101,21 +87,41 @@
                     <tr class="btn-row">
 
                         <td class="btn">
-                            <button id="zero">0</button>
+                            <input type="button" id="one" value="1">
                         </td>
 
                         <td class="btn">
-                            <button id="dec">.</button>
+                            <input type="button" id="two" value="2">
                         </td>
 
                         <td class="btn">
-                            <button id="enter">=</button>
+                            <input type="button" id="three" value="3">
+                        </td>
+
+                    </tr>
+
+                    <tr class="btn-row">
+
+                        <td class="btn">
+                            <input type="button" id="zero" value="0">
+                        </td>
+
+                        <td class="btn">
+                            <input type="button" id="dec" value=".">
+                        </td>
+
+                        <td class="btn">
+                            <input type="button" id="enter" value="=">
                         </td>
 
                     </tr>
 
                 </table>
+
             </div>
+
+        </div>
+        
         <script src="js/calculator.js" async defer></script>
     </body>
 </html>
