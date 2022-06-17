@@ -17,12 +17,19 @@ function inputNum(e){//add new number to string
 function inputOp(e){//when operator button is pressed
     var operator = e.value;
     var nums = [];
+    if(operator == '-'){
+        if(userInput == '' || userInput[userInput.length - 1] == ' '){//if - is first character or after another operator
+            userInput += '-';//add - before number
+            display.innerHTML = userInput;
+            return;
+        }
+    }
     if(userInput == ''){//if there is no input do nothing
         return;
-    }else if(userInput.indexOf('*') == -1
-           &&userInput.indexOf('/') == -1
-           &&userInput.indexOf('+') == -1
-           &&userInput.indexOf('-') == -1){//if there is no operator
+    }else if(userInput.indexOf(' * ') == -1
+           &&userInput.indexOf(' / ') == -1
+           &&userInput.indexOf(' + ') == -1
+           &&userInput.indexOf(' - ') == -1){//if there is no operator
             console.log('there no operator')
             userInput += ' ' + e.value + ' ';//add operator to string
             display.innerHTML = userInput;
