@@ -30,7 +30,7 @@ function inputOp(e){//when operator button is pressed
            &&userInput.indexOf(' / ') == -1
            &&userInput.indexOf(' + ') == -1
            &&userInput.indexOf(' - ') == -1){//if there is no operator
-            console.log('there no operator')
+            //console.log('there no operator')
             userInput += ' ' + e.value + ' ';//add operator to string
             display.innerHTML = userInput;
         }else{//if there is an operator
